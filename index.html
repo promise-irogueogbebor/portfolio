@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Promise Irogue Ogbebor</title>
+  <meta name="description" content="Portfolio van Promise Irogue Ogbebor, student Systemen en Netwerkbeheer aan AP Hogeschool. Bekijk mijn projecten en neem contact op.">
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="mx-auto max-w-5xl px-4">
+
+   <header class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-300 py-4">
+      <a href="index.html" class="text-xl font-bold">Promise Irogue Ogbebor</a>
+
+      <input type="checkbox" id="menu-knop" class="peer sr-only md:hidden">
+      <label for="menu-knop" class="flex cursor-pointer items-center gap-2 border border-gray-400 px-3 py-2 md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        Menu
+      </label>
+
+      <nav id="menu" aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+        <ul class="flex flex-col gap-1 md:flex-row md:gap-2">
+        <li><a href="index.html" class="block px-3 py-2 hover:bg-gray-200" aria-current="page">Home</a></li>
+        <li><a href="portfolio.html" class="block px-3 py-2 hover:bg-gray-200">Portfolio</a></li>
+        <li><a href="project.html" class="block px-3 py-2 hover:bg-gray-200">Project</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 hover:bg-gray-200">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="grid gap-8 py-8 md:grid-cols-3">
+      <main class="flex flex-col gap-8 md:col-span-2">
+
+        <section class="bg-[url(../images/hoofding.jpg)] bg-cover bg-center">
+          <div class="bg-black/70 px-6 py-16 text-white">
+            <p class="label">Portfolio</p>
+            <h1 class="text-4xl font-bold">Promise Irogue Ogbebor</h1>
+            <p class="mt-2">Student Systemen en Netwerkbeheer</p>
+          </div>
+        </section>
+
+        <section class="flex flex-col items-center gap-6 sm:flex-row">
+          <img src="images/profielfoto.jpg" alt="Promise Irogue Ogbebor met gekruiste armen voor een donkere deur" width="160" height="160" class="aspect-square w-40 rounded-full object-cover">
+          <div>
+            <h2 class="text-2xl font-bold">Over mij</h2>
+            <p class="mt-2">Ik ben Promise en ik studeer Systemen en Netwerkbeheer. Ik werk graag met computers, netwerken en servers. Op deze website laat ik zien wat ik tijdens mijn opleiding gemaakt heb.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold">Recente projecten</h2>
+          <div class="mt-4 grid gap-4 sm:grid-cols-3">
+            <article class="border border-gray-300 bg-white">
+              <img src="images/project-netwerk.jpg" alt="Schets van mijn thuisnetwerk" width="800" height="600" class="aspect-[4/3] w-full object-cover">
+              <div class="p-3">
+                <h3 class="font-bold">Thuisnetwerk</h3>
+                <a href="project.html" class="text-sm">Bekijk project</a>
+              </div>
+            </article>
+            <article class="border border-gray-300 bg-white">
+              <img src="images/project-server.jpg" alt="Linux server in de terminal" width="800" height="600" class="aspect-[4/3] w-full object-cover">
+              <div class="p-3">
+                <h3 class="font-bold">Linux server</h3>
+                <a href="portfolio.html" class="text-sm">Bekijk portfolio</a>
+              </div>
+            </article>
+            <article class="border border-gray-300 bg-white">
+              <img src="images/project-pi.jpg" alt="Raspberry Pi als kleine webserver" width="800" height="600" class="aspect-[4/3] w-full object-cover">
+              <div class="p-3">
+                <h3 class="font-bold">Raspberry Pi</h3>
+                <a href="portfolio.html" class="text-sm">Bekijk portfolio</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <aside class="border border-gray-300 bg-white p-4">
+        <h2 class="text-xl font-bold">Wat ik kan</h2>
+        <ul class="mt-2 list-disc pl-5">
+          <li>Windows en Linux installeren</li>
+          <li>Een netwerk opzetten</li>
+          <li>HTML en Tailwind</li>
+          <li>Problemen oplossen</li>
+        </ul>
+        <p class="mt-4"><a href="contact.html" class="underline">Neem contact op</a></p>
+      </aside>
+    </div>
+
+    <footer class="flex flex-col gap-2 border-t border-gray-300 py-4 text-sm sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; 2026 Promise Irogue Ogbebor — Systemen en Netwerkbeheer</p>
+      <a href="#" class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+        <span class="sr-only">Naar boven</span>
+      </a>
+    </footer>
+
+  </div>
+</body>
+</html>

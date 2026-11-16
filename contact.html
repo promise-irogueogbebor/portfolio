@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Promise Irogue Ogbebor</title>
+  <meta name="description" content="Stuur Promise Irogue Ogbebor een bericht over een stage of een vraag.">
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="mx-auto max-w-5xl px-4">
+
+    <header class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-300 py-4">
+      <a href="index.html" class="text-xl font-bold">Promise Irogue Ogbebor</a>
+
+      <input type="checkbox" id="menu-knop" class="peer sr-only md:hidden">
+      <label for="menu-knop" class="flex cursor-pointer items-center gap-2 border border-gray-400 px-3 py-2 md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        Menu
+      </label>
+
+      <nav id="menu" aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+        <ul class="flex flex-col gap-1 md:flex-row md:gap-2">
+        <li><a href="index.html" class="block px-3 py-2 hover:bg-gray-200">Home</a></li>
+        <li><a href="portfolio.html" class="block px-3 py-2 hover:bg-gray-200">Portfolio</a></li>
+        <li><a href="project.html" class="block px-3 py-2 hover:bg-gray-200">Project</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 hover:bg-gray-200" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="grid gap-8 py-8 md:grid-cols-3">
+      <main class="md:col-span-2">
+        <p class="label text-gray-600">Contact</p>
+        <h1 class="text-4xl font-bold">Contacteer mij</h1>
+        <p class="mt-2">Heb je een vraag of wil je samenwerken? Vul het formulier in of stuur me gerust een mail.</p>
+
+        <h2 class="mt-8 text-2xl font-bold">Stuur een bericht</h2>
+        
+        
+        <p class="mt-2 text-sm text-gray-700">Velden met een <span class="ster" aria-hidden="true">*</span> zijn verplicht.</p>
+
+        <form action="#" method="post" class="mt-4 grid gap-4 md:grid-cols-2">
+
+          <div class="veld">
+            <label for="naam">Naam <span class="ster" aria-hidden="true">*</span></label>
+            <input type="text" id="naam" name="naam" autocomplete="name" required aria-describedby="naam-fout">
+            <p class="fout" id="naam-fout">Je naam ontbreekt. Vul je voor- en achternaam in.</p>
+          </div>
+
+          <div class="veld">
+            <label for="email">E-mailadres <span class="ster" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hulp email-fout">
+            <p class="hulp" id="email-hulp">Bijvoorbeeld: naam@voorbeeld.be. Ik antwoord op dit adres.</p>
+            <p class="fout" id="email-fout">Dit is geen geldig e-mailadres. Controleer of er een @ en een domein (zoals .be) in staat.</p>
+          </div>
+
+          <div class="veld md:col-span-2">
+            <label for="onderwerp">Onderwerp <span class="ster" aria-hidden="true">*</span></label>
+            <select id="onderwerp" name="onderwerp" required aria-describedby="onderwerp-fout">
+              <option value="">Kies een onderwerp</option>
+              <option value="vraag">Algemene vraag</option>
+              <option value="samenwerking">Samenwerking</option>
+              <option value="stage">Stage</option>
+            </select>
+            <p class="fout" id="onderwerp-fout">Je hebt nog geen onderwerp gekozen. Kies er een uit de lijst.</p>
+          </div>
+
+          <div class="veld md:col-span-2">
+            <label for="bericht">Bericht <span class="ster" aria-hidden="true">*</span></label>
+            <textarea id="bericht" name="bericht" rows="6" minlength="10" required aria-describedby="bericht-hulp bericht-fout"></textarea>
+            <p class="hulp" id="bericht-hulp">Schrijf minstens 10 tekens.</p>
+            <p class="fout" id="bericht-fout">Je bericht is te kort of leeg. Schrijf minstens 10 tekens.</p>
+          </div>
+
+          <div class="md:col-span-2">
+            <button type="submit" class="bg-black px-4 py-2 text-white hover:bg-gray-700">Verstuur bericht</button>
+          </div>
+
+        </form>
+      </main>
+
+      <aside class="border border-gray-300 bg-white p-4">
+        <h2 class="text-xl font-bold">Bereikbaar</h2>
+        <ul class="mt-2 flex flex-col gap-3">
+          <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> <a href="mailto:promise.irobebor@gmail.com" class="underline">promise.irobebor@gmail.com</a></li>
+          <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+32400000000" class="underline">+32 400 00 00 00</a></li>
+          <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Antwerpen, België</li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer class="flex flex-col gap-2 border-t border-gray-300 py-4 text-sm sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; 2026 Promise Irogue Ogbebor — Systemen en Netwerkbeheer</p>
+      <a href="#" class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+        <span class="sr-only">Naar boven</span>
+      </a>
+    </footer>
+
+  </div>
+</body>
+</html>
