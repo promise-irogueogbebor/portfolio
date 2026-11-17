@@ -11,35 +11,35 @@
 <body>
   <div class="mx-auto max-w-5xl px-4">
 
-    <header class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-300 py-4">
+    <header class="flex flex-wrap items-center justify-between gap-4 border-b rand py-4">
       <a href="index.html" class="text-xl font-bold">Promise Irogue Ogbebor</a>
 
       <input type="checkbox" id="menu-knop" class="peer sr-only md:hidden">
-      <label for="menu-knop" class="flex cursor-pointer items-center gap-2 border border-gray-400 px-3 py-2 md:hidden">
+      <label for="menu-knop" class="flex cursor-pointer items-center gap-2 border rand px-3 py-2 md:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
         Menu
       </label>
 
       <nav id="menu" aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
         <ul class="flex flex-col gap-1 md:flex-row md:gap-2">
-        <li><a href="index.html" class="block px-3 py-2 hover:bg-gray-200">Home</a></li>
-        <li><a href="portfolio.html" class="block px-3 py-2 hover:bg-gray-200">Portfolio</a></li>
-        <li><a href="project.html" class="block px-3 py-2 hover:bg-gray-200">Project</a></li>
-        <li><a href="contact.html" class="block px-3 py-2 hover:bg-gray-200" aria-current="page">Contact</a></li>
+        <li><a href="index.html" class="block px-3 py-2 menu-link">Home</a></li>
+        <li><a href="portfolio.html" class="block px-3 py-2 menu-link">Portfolio</a></li>
+        <li><a href="project.html" class="block px-3 py-2 menu-link">Project</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 menu-link" aria-current="page">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="grid gap-8 py-8 md:grid-cols-3">
       <main class="md:col-span-2">
-        <p class="label text-gray-600">Contact</p>
+        <p class="label gedempt">Contact</p>
         <h1 class="text-4xl font-bold">Contacteer mij</h1>
         <p class="mt-2">Heb je een vraag of wil je samenwerken? Vul het formulier in of stuur me gerust een mail.</p>
 
         <h2 class="mt-8 text-2xl font-bold">Stuur een bericht</h2>
         
         
-        <p class="mt-2 text-sm text-gray-700">Velden met een <span class="ster" aria-hidden="true">*</span> zijn verplicht.</p>
+        <p class="mt-2 text-sm gedempt">Velden met een <span class="ster" aria-hidden="true">*</span> zijn verplicht.</p>
 
         <form name="contact" method="post" data-netlify="true" class="mt-4 grid gap-4 md:grid-cols-2">
 
@@ -75,14 +75,14 @@
           </div>
 
           <div class="md:col-span-2">
-            <button type="submit" class="bg-black px-4 py-2 text-white hover:bg-gray-700">Verstuur bericht</button>
+            <button type="submit" class="knop px-4 py-2">Verstuur bericht</button>
           </div>
 
         </form>
-        <p class="mt-4 text-sm text-gray-600">Je gegevens gebruik ik alleen om je bericht te beantwoorden. Ik deel ze met niemand.</p>
+        <p class="mt-4 text-sm gedempt">Je gegevens gebruik ik alleen om je bericht te beantwoorden. Ik deel ze met niemand.</p>
       </main>
 
-      <aside class="border border-gray-300 bg-white p-4">
+      <aside class="blok p-4">
         <h2 class="text-xl font-bold">Bereikbaar</h2>
         <ul class="mt-2 flex flex-col gap-3">
           <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> <a href="mailto:promise.irobebor@gmail.com" class="underline">promise.irobebor@gmail.com</a></li>
@@ -92,7 +92,7 @@
       </aside>
     </div>
 
-    <footer class="flex flex-col gap-2 border-t border-gray-300 py-4 text-sm sm:flex-row sm:items-center sm:justify-between">
+    <footer class="flex flex-col gap-2 border-t rand py-4 text-sm sm:flex-row sm:items-center sm:justify-between">
       <p>&copy; 2026 Promise Irogue Ogbebor — Systemen en Netwerkbeheer</p>
       <a href="#" class="flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>

@@ -11,67 +11,67 @@
 <body>
   <div class="mx-auto max-w-5xl px-4">
 
-    <header class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-300 py-4">
+    <header class="flex flex-wrap items-center justify-between gap-4 border-b rand py-4">
       <a href="index.html" class="text-xl font-bold">Promise Irogue Ogbebor</a>
 
       <input type="checkbox" id="menu-knop" class="peer sr-only md:hidden">
-      <label for="menu-knop" class="flex cursor-pointer items-center gap-2 border border-gray-400 px-3 py-2 md:hidden">
+      <label for="menu-knop" class="flex cursor-pointer items-center gap-2 border rand px-3 py-2 md:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
         Menu
       </label>
 
       <nav id="menu" aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
         <ul class="flex flex-col gap-1 md:flex-row md:gap-2">
-        <li><a href="index.html" class="block px-3 py-2 hover:bg-gray-200">Home</a></li>
-        <li><a href="portfolio.html" class="block px-3 py-2 hover:bg-gray-200" aria-current="page">Portfolio</a></li>
-        <li><a href="project.html" class="block px-3 py-2 hover:bg-gray-200">Project</a></li>
-        <li><a href="contact.html" class="block px-3 py-2 hover:bg-gray-200">Contact</a></li>
+        <li><a href="index.html" class="block px-3 py-2 menu-link">Home</a></li>
+        <li><a href="portfolio.html" class="block px-3 py-2 menu-link" aria-current="page">Portfolio</a></li>
+        <li><a href="project.html" class="block px-3 py-2 menu-link">Project</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 menu-link">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="grid gap-8 py-8 md:grid-cols-3">
       <main class="md:col-span-2">
-        <p class="label text-gray-600">Mijn werk</p>
+        <p class="label gedempt">Mijn werk</p>
         <h1 class="text-4xl font-bold">Portfolio</h1>
         <p class="mt-2">Hier staan de projecten die ik tijdens mijn opleiding gemaakt heb.</p>
         <div class="mt-6 grid gap-4 sm:grid-cols-2">
-            <article class="border border-gray-300 bg-white">
+            <article class="blok">
               <img src="images/project-netwerk.jpg" alt="Schets van mijn thuisnetwerk" width="800" height="600" class="aspect-[4/3] w-full object-cover">
               <div class="p-3">
                 <h2 class="font-bold">Thuisnetwerk</h2>
-                <p class="text-sm text-gray-700">Een router, een switch en een paar toestellen verbonden.</p>
+                <p class="text-sm gedempt">Een router, een switch en een paar toestellen verbonden.</p>
                 <a href="project.html" class="text-sm underline">Meer lezen</a>
               </div>
             </article>
-            <article class="border border-gray-300 bg-white">
+            <article class="blok">
               <img src="images/project-server.jpg" alt="Linux server in de terminal" width="800" height="600" class="aspect-[4/3] w-full object-cover">
               <div class="p-3">
                 <h2 class="font-bold">Linux server</h2>
-                <p class="text-sm text-gray-700">Ubuntu Server geïnstalleerd in een virtuele machine.</p>
+                <p class="text-sm gedempt">Ubuntu Server geïnstalleerd in een virtuele machine.</p>
                 <a href="project.html" class="text-sm underline">Meer lezen</a>
               </div>
             </article>
-            <article class="border border-gray-300 bg-white">
+            <article class="blok">
               <img src="images/project-pi.jpg" alt="Raspberry Pi als kleine webserver" width="800" height="600" class="aspect-[4/3] w-full object-cover">
               <div class="p-3">
                 <h2 class="font-bold">Raspberry Pi</h2>
-                <p class="text-sm text-gray-700">Een kleine webserver thuis op een Raspberry Pi.</p>
+                <p class="text-sm gedempt">Een kleine webserver thuis op een Raspberry Pi.</p>
                 <a href="project.html" class="text-sm underline">Meer lezen</a>
               </div>
             </article>
-            <article class="border border-gray-300 bg-white">
+            <article class="blok">
               <img src="images/project-website.jpg" alt="Code van deze portfolio website" width="800" height="600" class="aspect-[4/3] w-full object-cover">
               <div class="p-3">
                 <h2 class="font-bold">Portfolio website</h2>
-                <p class="text-sm text-gray-700">Deze website, gemaakt met HTML en Tailwind.</p>
+                <p class="text-sm gedempt">Deze website, gemaakt met HTML en Tailwind.</p>
                 <a href="project.html" class="text-sm underline">Meer lezen</a>
               </div>
             </article>
         </div>
       </main>
 
-      <aside class="border border-gray-300 bg-white p-4">
+      <aside class="blok p-4">
         <h2 class="text-xl font-bold">Wat ik leer</h2>
         <ul class="mt-2 list-disc pl-5">
           <li>Netwerken</li>
@@ -81,7 +81,7 @@
       </aside>
     </div>
 
-    <footer class="flex flex-col gap-2 border-t border-gray-300 py-4 text-sm sm:flex-row sm:items-center sm:justify-between">
+    <footer class="flex flex-col gap-2 border-t rand py-4 text-sm sm:flex-row sm:items-center sm:justify-between">
       <p>&copy; 2026 Promise Irogue Ogbebor — Systemen en Netwerkbeheer</p>
       <a href="#" class="flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
